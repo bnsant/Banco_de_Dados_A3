@@ -21,3 +21,19 @@ VALUES
 (2, 3, '2026-10-23'),
 (3, 1, '2026-10-24'),
 (3, 3, '2026-10-25');
+
+INSERT INTO INSCRICAO
+(id_campeonato, id_equipe, data_inscricao)
+VALUES
+(3, 2, '2026-10-26');
+
+UPDATE INSCRICAO
+SET data_inscricao = '2026-10-27'
+WHERE id_campeonato = 3
+  AND id_equipe = 2
+  AND data_inscricao = '2026-10-26';
+
+DELETE FROM INSCRICAO
+WHERE id_campeonato = 3
+  AND id_equipe = 2
+  AND data_inscricao = '2026-10-27';
