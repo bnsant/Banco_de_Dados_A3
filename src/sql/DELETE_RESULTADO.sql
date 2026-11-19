@@ -1,0 +1,8 @@
+USE campeonato_esports;
+
+START TRANSACTION;
+
+DELETE FROM RESULTADO
+WHERE id_resultado = 3;
+
+ROLLBACK;
